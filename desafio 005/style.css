@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+body  {
+    background-color: blanchedalmond ;
+}
+
+.lista {
+    background-color: rgb(17, 226, 80);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p1 {
+    background-color:  rgb(231, 12, 166);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    background-color: rgb(212, 185, 27);
+}
