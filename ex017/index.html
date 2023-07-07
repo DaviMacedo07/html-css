@@ -7,27 +7,69 @@
     <title>Formulários</title>
 </head>
 <body>
-    <h1>Prova do DETRAN</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <fieldset> <legend style="text-align: center;">Ola</legend>
+        <h1>Prova do DETRAN</h1>
+        <form action="cadastro.php" method="post" autocomplete="off" > 
+            </p>
+    </fieldset>
+    <fieldset> <legend>Esportes</legend>
         <p>
-            <label for="iname"> Nome :</label>
-            <input type="text" name="nome" id="iname">
-        </p>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas"> Basquete</label> <br>
+            <input type="checkbox" name="esgolf" id="iesgolf"> <label for="iesgolf">Golf</label> <br>
+            <input type="checkbox" name="esvolei" id="iesvol"> <label for="iesvol">Vôlei<br></label> 
+          </p>
+    </fieldset>
+    <fieldset>
+        <p>
+        <label for="iest">Estado :</label>
+        <select name="name" id="iest">
+        <option value=""> --- Escolha ---</option>
+        <optgroup label="Região Sudeste">
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+        </optgroup>
 
-        <p>
-            <label for="idata"> Data da Prova :</label>
-            <input type="date" name="data" id="idata">         
-        </p>
+        
+        <optgroup label="Região Nordeste">
+            <option value="CE">Ceará </option>
+            <option value="PE">Pernambuco</option>
+            <option value="AL">Alagoas</option></optgroup>
 
-        <p>
-            <label for="ihora"> Horário da Prova :</label>
-            <input type="time" name="hora" id="ihora">
+    </select>
         </p>
-        <p>
-            <input type="reset" value="Limpar">
-            <input type="submit" value="Enviar ">
-        </p>
+    </fieldset>
+    <p>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option >Administrador</option>
+            <option >Financeiro</option>
+        </datalist>
+    </p>
 
+     <p>
+        <label for="in1">Número 1 :</label>
+        <input type="number" name="n1" id="in1" min="0" max="50" oninput="isoma.innerHTML = Number (in1.value) + Number(in2.value)">
+     </p>
+
+     <p>
+        <label for="in2"> Noumero 2 :</label>
+        <input type="number" name="n2" id="in2" oninput="isoma.innerHTML = Number (in1.value) + Number(in2.value)">
+
+     </p>
+     <p>
+        <label for="isoma"> Soma</label>
+        <output name="soma" id="isoma"> 0</output>
+     </p>
     </form>
+ <form action="/action_page_binary.asp" method="post">
+   <label for="fname">First name:</label>
+   <input type="text" id="fname" name="fname"><br><br>
+   <input type="submit" value="Submit">
+   <input type="submit" formenctype="multipart/form-data"
+   value="Submit as Multipart/form-data">
+ </form>
 </body>
 </html>

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+nav{
+   
+}
+
+* {
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1,6em;
+}
+li {
+    display: inline;
+}
+main::after {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    content: "Esse artigo foi escrito por: Roberta D'villa , Heracto Graça e Roger Machado!";
+}
+
